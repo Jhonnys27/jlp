@@ -1,0 +1,182 @@
+*{
+    padding: 0;  /*para que quede uno debajo del otro*/
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(rgb(255, 102, 0), white);
+    padding-left: 100px;
+    padding: 100px;
+}
+
+header{
+    width: 100%;
+    background: #1ABC9C;
+    height: 80px;
+}
+.ancho{
+    width: 90%;
+    height: 70px;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    float: left; /* aqui use esto porque un contenedor se abajo*/
+    padding-top: 10px; /*para que se dezplazara 10px, osea bajara estaba arriba*/
+    font-family: rale;
+}
+.logo p a{ /*se va al logo al parrafo del titulo*/
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline; /*esto es porque por defecto los li dan las listas hacia abajo, entonces para alinarlo*/
+}
+nav ul li a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none; /*por que por defecto deebajo de las letras aparece una linea ya tu sabes como es, entonces con esto se le quita*/
+    padding-left: 15px; /*para separrar las palabras*/
+    font-weight: bold; /* pone en negrita la letra*/
+    letter-spacing: 1px;
+    font-family: rale;
+}
+nav ul li a:hover{
+    color: #444; /*para cuando el mouse se ponga cambie de color en el menu*/
+}
+@font-face{
+    font-family: rale;
+    src: url('../taller2/font/Raleway-Regular.ttf');
+}
+#uno{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#def{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+
+}
+#def:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px navy;
+    transform: rotate(360deg);
+}
+#sint{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000; /* no se porque pero esto no funciona, deberia dar una sombra en el borde*/
+    padding: 5px;
+}
+
+
+
+#des{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+}
+#gris{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px
+}
+#trans{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px
+    -webKit-box
+}
+
+#des:hover{
+    filter: blur(5px)
+    
+}
+
+#gris:hover{
+    filter: grayscale(80%);
+}
+
+#trans:hover{
+    filter: opacity(.5);
+}
+
+.con:hover{
+    transition: transform .2s;
+    transform: scale(1.5);
+}
+#foot1{
+    font-family: rale;
+    font-weight: bold;
+}
+#foot2{
+    font-family: rale;
+    font-weight: bold;
+}
+#foot3{
+    font-family: rale;
+    font-weight: bold;
+}
+#foot4{
+    font-family: rale;
+    font-weight: bold;
+}
+#foot5{
+    font-family: rale;
+    font-weight: bold;
+}
+#foot6{
+    font-family: rale;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+ }
+ caption {
+    padding: 0.3em;
+    color: #fff;
+     background: #000;
+ }
+ th {
+    background: #eee;
+ }
+ 
